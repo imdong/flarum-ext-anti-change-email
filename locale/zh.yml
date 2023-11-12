@@ -3,6 +3,6 @@ imdong-anti-change-email:
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
     permissions:
-      change-email:  修改邮箱
+      change-email: 修改邮箱
 
   forum:
