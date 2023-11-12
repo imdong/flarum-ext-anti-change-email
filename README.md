@@ -16,7 +16,6 @@ composer require imdong/flarum-ext-anti-change-email:"*"
 
 ```sh
 composer update imdong/flarum-ext-anti-change-email:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 

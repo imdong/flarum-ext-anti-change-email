@@ -26,7 +26,7 @@
             "title": "Anti Change Email",
             "category": "",
             "icon": {
-                "name": "",
+                "name": "far fa-envelope",
                 "color": "",
                 "backgroundColor": ""
             }
@@ -73,6 +73,7 @@
         "test:setup": "Sets up a database for use with integration tests. Execute this only once."
     },
     "require-dev": {
-        "flarum/testing": "^1.0.0"
+        "flarum/testing": "^1.0.0",
+        "symfony/var-dumper": "^6.3"
     }
 }
