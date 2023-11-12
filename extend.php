@@ -35,11 +35,12 @@ return [
     // 拦截 修改请求
     (new Extend\Event())
         ->listen(Saving::class, function (Saving $event) {
+            $actor = $event->actor;
             $user = $event->user;
             $data = $event->data;
 
             if (!empty($data['attributes']['email'])) {
-                $user->assertCan(Defined::key('changeEmail'));
+                $actor->assertCan(Defined::key('changeEmail'), $user);
             }
         }),
 ];
